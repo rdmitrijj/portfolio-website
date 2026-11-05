@@ -26,6 +26,6 @@
         <h2>IELTS-english preparation tool</h2>
         An excellent tool that I've made for my personal preparing to <b>IELTS</b>
 
-        <script src="" async defer></script>
+        <script src="main.js" async defer></script>
     </body>
 </html>
