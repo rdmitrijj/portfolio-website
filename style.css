@@ -1,16 +1,21 @@
 h1 {
+    display: flexbox;
+    width: fit-content;
+    margin: 0.67em auto;
     text-align: center;
-    font: 600 40px/1.2 "JetBrains Mono", monospace;
+    font: 600 43px/1.2 "JetBrains Mono", monospace;
     background: linear-gradient(90deg, #7676d8, #5e3e95, #bc5ff2, #6866e9) 0 0 / 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: title-fx 7s linear infinite;
     cursor: pointer;
+    animation: title-fx 7s linear infinite;
 }
-
-a {
-    color: transparent;
+h1:hover {
+    animation: shadow-fx 2s;
+}
+h1:active {
+    transform: scale(0.98);
 }
 
 @keyframes title-fx {
@@ -18,9 +23,15 @@ a {
     100% { background-position: 200%;}
 }
 
-h1:hover {
-    transform: rotate(20);
-    filter: drop-shadow(4px 4px 6px #2f374d)
+@keyframes shadow-fx {
+    0% {filter: drop-shadow(0px 0px 0px #2f374d)}
+    50% {filter: drop-shadow(10px 15px 2px #49365c)}
+}
+
+
+
+a {
+    color: transparent;
 }
 
 
@@ -40,6 +51,7 @@ body {
     text-align: center;
 }
 #container-1 {
+    -webkit-background-clip: text;
     margin-left: auto;
     margin-right: auto;
 
