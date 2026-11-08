@@ -3,20 +3,38 @@ h1 {
     width: fit-content;
     margin: 0.67em auto;
     text-align: center;
-    font: 600 43px/1.2 "JetBrains Mono", monospace;
-    background: linear-gradient(90deg, #7676d8, #5e3e95, #bc5ff2, #6866e9) 0 0 / 200% 100%;
+    font: 600 35px/1.2 "JetBrains Mono", monospace;
+    background: linear-gradient(90deg, #c5c5ee, #ccbee5, #dfb7f6, #c3c2ee) 0 0 / 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: title-fx 3s linear infinite;
+}
+.my_name {
+    font: 600 45px/1.2 "JetBrains Mono", monospace;
+    background: linear-gradient(90deg, #7676d8, #5e3e95, #bc5ff2, #6866e9) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.my_name:hover {
     cursor: pointer;
-    animation: title-fx 7s linear infinite;
+    filter: drop-shadow(10px 15px 2px #49365c)
 }
-h1:hover {
-    animation: shadow-fx 2s;
-}
-h1:active {
+.my_name:active {
     transform: scale(0.98);
 }
+
+.arrow {
+    background: linear-gradient(90deg, #3333a4, #9055f5, #ff4ddb, #3b38ec) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 100px;
+    animation: arrow-load 0.4s ease backwards 1.4s
+}
+
 
 @keyframes title-fx {
     0% { background-position: 0% ;}
@@ -57,6 +75,24 @@ body {
     font-size: 130%;
     max-width: 60ch;
 }
+
+.greetings {
+    animation: page-load 0.8s ease backwards 0.7s;
+}
+
+@keyframes page-load {
+    from {opacity: 0; filter: blur(8px); transform: translateY(-25px)}
+    to {opacity: 1; filter: blur(0); transform:none}
+}
+@keyframes arrow-load {
+    from {opacity: 0; transform: translateY(-50px)}
+    to {opacity: 1; transform:none}
+}
+@keyframes myname_load {
+    from {opacity: 0; filter: blur(8px)}
+    to {opacity: 1; filter: blur(0)};
+}
+
 .description {
     opacity: 0;
     transform: translateY(30px);
