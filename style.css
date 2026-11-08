@@ -19,11 +19,18 @@ h1 {
 
 .my_name:hover {
     cursor: pointer;
-    filter: drop-shadow(10px 15px 2px #49365c)
+    animation: shadow-fx 1.3s ease
 }
-.my_name:active {
-    transform: scale(0.98);
+.my_name:active{
+   transform: scale(0.97);
 }
+.my_name.pressed:active{
+   transform: none;
+}
+.my_name.pressed:hover{
+   cursor: default;
+}
+
 
 .arrow {
     background: linear-gradient(90deg, #3333a4, #9055f5, #ff4ddb, #3b38ec) 0 0 / 200% 100%;
