@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>rdmitrijj</h1>
+        <h1><a href="https://github.com/rdmitrijj">rdmitrijj</a></h1>
         <div id="container-1">
             <h2>Full-Stack Developer</h2>
             <p>I'm A Full-Stack developer, who is able to design a website, building backend & frontend systems. One of my best websites is Apex-Prep.
             </p>
             <p>Apex-prep - an excellent app to prepare for SAT exam, which is really important for getting into university. That's why I've made it - to prepare better for this exam, to get into best unversities in Europe.</p>
-            <h3>DevOps</h3>
+            <h2>DevOps</h2>
             <p>DevOps is one love - I'm ready to build a working infrastructure of a project, maintain CI/CD pipelines
             and, of course, to make deployment with production much easier</p>
         </div>
