@@ -1,5 +1,5 @@
 h1 {
-    display: flexbox;
+    display: flex;
     width: fit-content;
     margin: 0.67em auto;
     text-align: center;
@@ -29,7 +29,6 @@ h1:active {
 }
 
 
-
 a {
     color: transparent;
 }
@@ -57,7 +56,16 @@ body {
 
     font-size: 130%;
     max-width: 60ch;
-
+}
+.description {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(8px);
+    transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
 }
 
-
+.description.show {
+    opacity: 1;
+    transform: none;
+    filter: none;
+}
